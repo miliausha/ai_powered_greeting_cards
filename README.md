@@ -27,7 +27,7 @@ cd ai_powered_greeting_cards
 
 ```bash
 python3 -m venv venv
-source 
+source  venv/bin/activate
 ```
 
 3. Install the reqiored packages:
