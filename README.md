@@ -2,6 +2,8 @@
 
 This project is a Flask web application that allows users to create and generate digital cards. The application uses the Cloudflare text-to-image API to generate images based on user prompts and sends the generated cards to Discord. Model used in this app is @cf/lykon/dreamshaper-8-lcm . More information about models you can find here: https://cloudflare.com
 
+This is educational Workshop for 42Bangkok students  to learn how to interact with AI and Discord
+
 ## Features
 
 - Generate images based on user prompts using the Cloudflare text-to-image API.
