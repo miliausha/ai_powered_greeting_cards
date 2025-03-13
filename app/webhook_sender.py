@@ -10,7 +10,7 @@ DISCORD_WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
 def send_to_discord(image_path, text):
      with open(image_path, "rb") as f:
         files = {
-            "file": ("generated_image.jpeg", f)
+            "file": ("generated.png", f)
         }
         data = {
             "payload_json": json.dumps({
@@ -20,7 +20,7 @@ def send_to_discord(image_path, text):
                         "title": "New card created",
                         "description": text,
                         "image": {
-                            "url": "attachment://generated_image.jpeg"
+                            "url": "attachment://generated.png"
                         }
                     }
                 ]

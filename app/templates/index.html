@@ -18,7 +18,7 @@
     <div id="form" class="bg-white p-6 rounded-lg shadow-lg w-96 text-center">
         <h1 class="text-xl font-bold text-pink-600">Create Your 8 March Card 🌸</h1>
         <!-- we will create a card with htmx attributes -->
-            <form class="mt-4">
+            <form hx-post="/generate_card" hx-target="this" hx-swap="outerHTML" class="mt-4">
                 <input type="text" name="prompt" placeholder="Prompt" class="w-full p-2 border rounded mb-2" required>
                 <input type="text" name="message" placeholder="Your message..." class="w-full p-2 border rounded" required>
             
